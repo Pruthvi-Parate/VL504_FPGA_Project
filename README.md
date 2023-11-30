@@ -20,3 +20,20 @@ Displaying Image on the VGA monitor from SD Card
 ----------------------------
 ## Implementation
 
+--------------------
+## Software Simulation Results  
+ 
+**Input Image**  
+
+![sw_sim_input_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/951e0943-ce3f-4635-89d5-96dbbfd0c7b7)  
+
+**Output Image**  
+
+![sw_sim_output_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/f119e64b-6c09-450c-a2f1-3c5ec57161ec)  
+---------------------------------------------
+## Hardware Simulation Results
+**Input Image**
+![hw_sim_input_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/ead477db-b66c-48f3-8909-5aeec5624971)  
+
+**Output Image**
+![hw_sim_output_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/6429fdfc-3476-4b8c-af49-d05b9dcc174d)
