@@ -63,7 +63,7 @@
 #define SIZE 16384
 void write_data(u32 data,u32 reg);
 void write_address(u32 address);
-u32 concatenateBinaries(u32 bin1, u32 bin2, u32 bin3);
+//u32 concatenateBinaries(u32 bin1, u32 bin2, u32 bin3);
 
 int main()
 {
@@ -114,7 +114,7 @@ int main()
 
 
 	    	write_address(i);
-	    	write_data(image[i],2);
+	    	write_data(image[i]);
 
 
 
@@ -147,14 +147,14 @@ int main()
 	    return 0;
 }
 
-void write_data(u32 data,u32 reg)
+void write_data(u32 data)
 {
-	if(reg==2)
-	{
-		PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
+	//if(reg==2)
+	//{
+	PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
 			    				PROJECT_IP_S00_AXI_SLV_REG2_OFFSET,
 			    				data);
-	}
+	/*}
 	else if(reg==3)
 	{
 		PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
@@ -166,7 +166,7 @@ void write_data(u32 data,u32 reg)
 		PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
 			    				PROJECT_IP_S00_AXI_SLV_REG4_OFFSET,
 			    				data);
-	}
+	}*/
 }
 
 void write_address(u32 address)
@@ -176,13 +176,4 @@ void write_address(u32 address)
 		    				address);
 }
 
-u32 concatenateBinaries(u32 bin1, u32 bin2, u32 bin3)
-{
-    // Concatenate three 8-bit binary numbers into a single 24-bit binary number
-    u32 result = 0;
 
-    // Shift and concatenate
-    result = (bin1 << 16) | (bin2 << 8) | bin3;
-
-    return result;
-}
