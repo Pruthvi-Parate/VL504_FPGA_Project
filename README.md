@@ -40,12 +40,13 @@ Displaying Image on the VGA monitor from SD Card
 ![hw_sim_output_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/6429fdfc-3476-4b8c-af49-d05b9dcc174d)  
 
 ## Acknowledgement
-1. Professor Nanditha Rao
-2. Jay Shah
-3. Himanshu Kumar Rai
-4. Shubhayu Das
-5. Kanish R
-6. Alwin Shaju
+We would like to thank following people for supporting us in completing this project.
+1. Professor Nanditha Rao, IIITB
+2. Jay Shah, Research Scholar, IIITB
+3. Himanshu Kumar Rai, Research Scholar, IIITB
+4. Shubhayu Das, IMtech, IIITB
+5. Kanish R, Mtech, IIITB
+6. Alwin Shaju, Mtech, IIITB
 
 ## References
 1. https://github.com/Shubhayu-Das/VL504-project/tree/main
