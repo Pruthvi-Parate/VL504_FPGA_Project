@@ -1,6 +1,6 @@
 # VL504_System_Design_With_FPGA_Project
 -------------------
-## Submitted By: Pruthvi Parate (MS2023009) , Bhargav D V (MS2023003)
+## Submitted By: [Pruthvi Parate (MS2023009)](https://github.com/Pruthvi-Parate) , [Bhargav D V (MS2023003)](https://github.com/bhargav-vlsi)
 ---------------------
 ## Project
 Displaying Image on the VGA monitor from SD Card  
@@ -50,7 +50,7 @@ Displaying Image on the VGA monitor from SD Card
 
 ## Acknowledgement
 We would like to thank following people for supporting us in completing this project.
-1. Professor Nanditha Rao, IIITB
+1. [Professor Nanditha Rao](https://www.iiitb.ac.in/faculty/nanditha-rao), IIITB
 2. Jay Shah, Research Scholar, IIITB
 3. Himanshu Kumar Rai, Research Scholar, IIITB
 4. Shubhayu Das, IMtech, IIITB
