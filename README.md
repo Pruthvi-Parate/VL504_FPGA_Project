@@ -18,8 +18,16 @@ Displaying Image on the VGA monitor from SD Card
 1. Vivado 2019.2
 2. Vitis 2019.2
 ----------------------------
-## Implementation
+## Implementation  
 
+1. First we converted the input image(RGB) into image.dat(grayscale) using generate_input_image.py file    
+2. Then we converted the image.dat file to image.txt(binary) file using binary.py    
+3. Now for image processing we implemented sobel edge detection to perform image processing on image.txt which is implemented in this files: I) image_processing_module.v  II sobel_operator_module.v  III) horizontal_gradient_module.v 
+ IV) vertical_gradient_module.v    
+4. To show this image on VGA we implemented VGA module which takes data from blockram and shows the image to the VGA Monitor    
+5. After that we packaged the IP and then created block design to implement the process of transferring the image from SD card to DDR and from DDR to Blockram.    
+6. Now export the hardware and open Vitis IDE  
+7. Then we implemented C code to interface and read image from SD card and transferring to DDR to Blockram and to show the image on VGA monitor.
 --------------------
 ## Software Simulation Results  
  
