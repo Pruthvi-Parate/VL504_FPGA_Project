@@ -49,43 +49,34 @@
 #include "platform.h"
 #include "xil_printf.h"
 #include <stdio.h>
-//#include "platform.h"
-//#include "xil_printf.h"
-//#include<stdio.h>
 #include "xparameters.h"
 #include "ff.h"
 #include "xstatus.h"
 #include <stdlib.h>
 #include<xil_io.h>
 #include<xil_types.h>
-//#include "xil_printf.h"
+
 #include "project_ip.h"
 #define SIZE 16384
 void write_data(u32 data,u32 reg);
 void write_address(u32 address);
-//u32 concatenateBinaries(u32 bin1, u32 bin2, u32 bin3);
+
 
 int main()
 {
 	init_platform();
-	//printf("hi\n");
+	
 	printf("Image processing zynq......\n");
 	    static const char *sdcard = "0:/";
 	    	static FATFS fs;
 	    	static FIL file,write;
 	    	FRESULT result;
 	    	unsigned int nBytes;
-	    	//u32 addr=0;
-	    	//init_platform();
+	    	
 	    	PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
 	    				PROJECT_IP_S00_AXI_SLV_REG0_OFFSET,
 	    				0);
-	    	/*PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
-	    				INPUT_IMAGE_CONTROLLER_IP_S00_AXI_SLV_REG1_OFFSET,
-	    				0);*/
-
-	    	//ddr variables
-	    	//u32* image = (u32*)XPAR_PS7_DDR_0_S_AXI_BASEADDR;
+	    	
 	    	u32 image[128*128]={0};
 
 	    	//sd card
@@ -101,18 +92,12 @@ int main()
 	    	result = f_close(&file);
 	    	if(result==0) printf("Closing file\n");
 
-	    	//printf("%u\n %u\n %u\n",image[0],&image+1,&image);
+	    	
 
-	    	//transferring ddr data to block ram of PL
-	    	//PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
-	    		//	INPUT_IMAGE_CONTROLLER_IP_S00_AXI_SLV_REG0_OFFSET,
-	    		//	1);*/
+	    	
 	    	for(u32 i=0;i<SIZE;i++)
 	    	{
-	    		//printf("%d \n",image[i]);
-
-
-
+	    		
 	    	write_address(i);
 	    	write_data(image[i]);
 
@@ -125,48 +110,15 @@ int main()
 	    					PROJECT_IP_S00_AXI_SLV_REG0_OFFSET,
 	    					1);
 	    	printf("Done sending image data to PL\n");
-/*
-	    	result = f_open(&write, "done.txt", FA_WRITE | FA_CREATE_ALWAYS);
-	    	printf("File opening for write: %d\n", result);
 
-	    	if(result == FR_OK){
-	    			result = f_write(&write, "Done", 4*sizeof(u32), &nBytes);
-	    			printf("File writing: %d\n", result);
-
-	    			result = f_close(&write);
-	    			printf("Closing file: %d\n", result);
-	    		}*/
-	    	result = f_unmount(sdcard);
-	    		printf("Card unmounting done");
-
-	    	    //cleanup_platform();
-	    	    //return 0;
-
-
-	    cleanup_platform();
-	    return 0;
-}
 
 void write_data(u32 data)
 {
-	//if(reg==2)
-	//{
+	
 	PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
 			    				PROJECT_IP_S00_AXI_SLV_REG2_OFFSET,
 			    				data);
-	/*}
-	else if(reg==3)
-	{
-		PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
-			    				PROJECT_IP_S00_AXI_SLV_REG3_OFFSET,
-			    				data);
-	}
-	else if(reg==4)
-	{
-		PROJECT_IP_mWriteReg(XPAR_PROJECT_IP_0_S00_AXI_BASEADDR,
-			    				PROJECT_IP_S00_AXI_SLV_REG4_OFFSET,
-			    				data);
-	}*/
+	
 }
 
 void write_address(u32 address)
