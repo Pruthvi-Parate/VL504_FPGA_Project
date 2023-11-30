@@ -1,4 +1,6 @@
 # VL504_System_Design_With_FPGA_Project
+-------------------
+## Submitted By: Pruthvi Parate (MS2023009) , Bhargav D V (MS2023003)
 ---------------------
 ## Project
 Displaying Image on the VGA monitor from SD Card  
