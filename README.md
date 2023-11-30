@@ -12,7 +12,11 @@ Displaying Image on the VGA monitor from SD Card
 
 1. Zedboard evaluation board
 2. SD Card and SD card reader.
-3. VGA Monitor and Cable 
+3. VGA Monitor and Cable
+-------------------------
+## Software Requirements: 
+1. Vivado 2019.2
+2. Vitis 2019.2
 
 ## Step By Step Process for running
 
