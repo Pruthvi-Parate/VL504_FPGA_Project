@@ -1,1 +1,1 @@
-# VL504_FPGA_Project
+# VL504_System_Design_With_FPGA_Project
