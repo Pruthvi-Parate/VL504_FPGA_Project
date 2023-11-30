@@ -37,4 +37,21 @@ Displaying Image on the VGA monitor from SD Card
 ![hw_sim_input_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/ead477db-b66c-48f3-8909-5aeec5624971)  
 
 **Output Image**
-![hw_sim_output_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/6429fdfc-3476-4b8c-af49-d05b9dcc174d)
+![hw_sim_output_img](https://github.com/Pruthvi-Parate/VL504_FPGA_Project/assets/72121158/6429fdfc-3476-4b8c-af49-d05b9dcc174d)  
+
+## Acknowledgement
+1. Professor Nanditha Rao
+2. Jay Shah
+3. Himanshu Kumar Rai
+4. Shubhayu Das
+5. Kanish R
+6. Alwin Shaju
+
+## References
+1. https://github.com/Shubhayu-Das/VL504-project/tree/main
+2. https://github.com/Gowtham1729/Image-Processing
+3. https://www.youtube.com/playlist?list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1
+4. https://www.microcontrollertips.com/understanding-ddr-sdram-faq/
+5. https://www.allaboutcircuits.com/technical-articles/introduction-to-the-advancedextensible-interface-axi/
+6. https://www.avnet.com/wps/wcm/connect/onesite/a43adf00-158c-4614-b2c7-4a7f35b53f25/FY23_800_ZedBoard_Product_Brief_r2.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_NA5A1I41L0ICD0ABNDMDDG0000-a43adf00-158c-4614-b2c7-4a7f35b53f25-oj5IUo.
+7. https://embeddedthoughts.com/2016/07/29/driving-a-vga-monitor-using-an-fpga/
