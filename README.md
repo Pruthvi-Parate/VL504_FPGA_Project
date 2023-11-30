@@ -17,6 +17,6 @@ Displaying Image on the VGA monitor from SD Card
 ## Software Requirements: 
 1. Vivado 2019.2
 2. Vitis 2019.2
-
-## Step By Step Process for running
+----------------------------
+## Implementation
 
