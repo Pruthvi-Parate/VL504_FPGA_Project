@@ -53,7 +53,7 @@ We would like to thank following people for supporting us in completing this pro
 1. [Professor Nanditha Rao](https://www.iiitb.ac.in/faculty/nanditha-rao), IIITB
 2. Jay Shah, Research Scholar, IIITB
 3. Himanshu Kumar Rai, Research Scholar, IIITB
-4. Shubhayu Das, IMtech, IIITB
+4. Shubhayu Das, Digital IC Engineer, Analog Devices
 5. Kanish R, Mtech, IIITB
 6. Alwin Shaju, Mtech, IIITB
 
