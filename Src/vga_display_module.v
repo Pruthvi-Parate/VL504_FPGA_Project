@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2018 04:26:40 PM
-// Design Name: 
-// Module Name: check
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01  - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module vga_display_module(
 clock,reset, pixel_input,        //inputs - sel_module(select required function), reset(to switch on and off), val(give a value to adjust brightness and filters)
